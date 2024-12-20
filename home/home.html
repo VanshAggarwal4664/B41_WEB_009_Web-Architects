@@ -1,22 +1,721 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <link rel="stylesheet" href="./home.css">
 </head>
+
 <body>
-   
-<!-- vansh -->
-<!-- navbar -->
- <!-- herobanner -->
- <!-- products -->
-  <!-- compare -->
-   <!-- 2million -->
- 
- <!-- Akash -->
-  <!-- brand -->
+
+    <!-- vansh -->
+    <!-- navbar -->
+    <header>
+        <nav class="mobile-navbar">
+            <div class="navbar">
+                <div class="hamburger">
+                    <i class="ri-menu-line"></i>
+                </div>
+                <div class="mobile-logo">
+                    <h5>MODESENS</h5>
+                </div>
+                <div class="icons">
+                    <i class="ri-user-line"></i>
+                    <i class="ri-handbag-line"></i>
+                </div>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <div class="desktop-navbar">
+                <div class="desktop-logo">
+                    <h2>MODESENS</h2>
+                </div>
+                <ul class="menu">
+                    <li>Women</li>
+                    <li>Men</li>
+                    <li>Beauty</li>
+                    <li>Kids</li>
+                    <li>Home</li>
+                    <li>Designers</li>
+                    <li>Community</li>
+                    <li><span>Sale</span></li>
+                </ul>
+                <div class="desktop-search">
+                    <input type="text" placeholder="Search For Prodcuts">
+                </div>
+                <div class="desktop-icons">
+                    <i class="ri-heart-line"></i>
+                    <i class="ri-notification-3-line"></i>
+                    <i class="ri-user-line"></i>
+                    <i class="ri-handbag-line"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="side-menu hidden">
+            <div class="side-menu-cross">
+                <i class="ri-twitter-x-line"></i>
+            </div>
+            <div class="side-menu-logo">
+                <h2>MODESENS</h2>
+            </div>
+            <div class="side-menu-icons">
+                <input type="text" placeholder="Search For Prodcuts">
+                <i class="ri-heart-line"></i>
+                <i class="ri-notification-3-line"></i>
+            </div>
+            <ul class="side-menu-links">
+                <li>Women</li>
+                <li>Men</li>
+                <li>Beauty</li>
+                <li>Kids</li>
+                <li>Home</li>
+                <li>Designers</li>
+                <li>Community</li>
+                <li><span>Sale</span></li>
+            </ul>
+
+        </div>
+    </header>
+    <!-- herobanner -->
+    <!-- search section -->
+    <section class="search-section">
+        <div class="search-container">
+            <div class="search">
+                <div class="search-heading">
+                    <h1>CHECK MODESENS BEFORE YOU BUY</h1>
+                    <p>We're not a store <br>We're your smart personal shopper</p>
+                </div>
+                <div class="search-text">
+                    <input type="text" placeholder="Enter Your Query">
+                    <button>Search</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="hero-heading-container">
+        <div class="hero-heading">
+            <div>
+                <h1>Your One-Stop Holiday Shopping Destination</h1>
+            </div>
+            <div>
+                <p>From exclusive sales to luxurious gift guides, we’ve got everything you want for the festive
+                    season—all in one place.</p>
+            </div>
+        </div>
+    </section>
+    <section class="hero-banner-container">
+        <div class="hero-banner-slider">
+            <div class="slider">
+                <button class="arrow prev" onclick="changeHeroSlide(-1)"><i class="ri-arrow-left-s-line"></i></button>
+                <div class="hero-slides slides">
+                    <div class="slide hero-slide"><img
+                            src="../../Images/20241129-modesens-Harvey-1140x400_1732874404.jpg" alt="Slide 1"></div>
+                    <div class="slide hero-slide"><img src="../../Images/20241205-modesens-Farfetch-1140x400.jpg"
+                            alt="Slide 2"></div>
+                    <div class="slide hero-slide"><img src="../../Images/20241216-modesens-Shopbop-1140x400-F.jpg"
+                            alt="Slide 3"></div>
+                    <div class="slide hero-slide"><img src="../../Images/20241217-mdoesens-Casadei-1140x400-F.jpg"
+                            alt="Slide 4"></div>
+                </div>
+                <button class="arrow next" onclick="changeHeroSlide(1)"><i class="ri-arrow-right-s-line"></i></button>
+            </div>
+        </div>
+
+    </section>
+    <section class="hero-sale-container">
+        <div class="hero-sale-slider-container">
+            <div class="slider hero-sale-slider">
+                <button class="arrow prev" onclick="changeHeroSaleSlide(-1)"><i
+                        class="ri-arrow-left-s-line"></i></button>
+                <div class="hero-sale-slides slides">
+                    <div class="slide hero-sale-slide">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="sale-img card1">
+                                </div>
+                                <div class="sale-content">
+                                    <div class="sale-content-text">
+                                        <h4>Your Winter Sales Edit</h4>
+                                        <p>We've rounded up the best deals, so you don't have to</p>
+                                    </div>
+                                    <div>
+                                        <a href="">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="sale-img card2">
+                                </div>
+                                <div class="sale-content">
+                                    <div class="sale-content-text">
+                                        <h4>Top winter picks at Mytheresa</h4>
+                                        <p>Shop styles up to 60% off for a limited time!</p>
+                                    </div>
+                                    <div>
+                                        <a href="">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="sale-img card3">
+                                </div>
+                                <div class="sale-content">
+                                    <div class="sale-content-text">
+                                        <h4>The Designer Sale Now Live</h4>
+                                        <p>Take up to 65% off Select Designers</p>
+                                    </div>
+                                    <div>
+                                        <a href="">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slide hero-sale-slide">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="sale-img card4">
+                                </div>
+                                <div class="sale-content">
+                                    <div class="sale-content-text">
+                                        <h4>40% off Full Price Styles</h4>
+                                        <p>Use code LVR40</p>
+                                    </div>
+                                    <div>
+                                        <a href="">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="sale-img card5">
+                                </div>
+                                <div class="sale-content">
+                                    <div class="sale-content-text">
+                                        <h4>10% off Louis Vuitton Styles</h4>
+                                        <p>Use code ULTIMATESFIRST10</p>
+                                    </div>
+                                    <div>
+                                        <a href="">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="sale-img card6">
+                                </div>
+                                <div class="sale-content">
+                                    <div class="sale-content-text">
+                                        <h4>The Designer Sale Live Now</h4>
+                                        <p>Enjoy up to 60% off</p>
+                                    </div>
+                                    <div>
+                                        <a href="">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <button class="arrow next" onclick="changeHeroSaleSlide(1)"><i
+                        class="ri-arrow-right-s-line"></i></button>
+            </div>
+        </div>
+
+    </section>
+    <!-- products -->
+    <section class="home-gift-product">
+        <div class="home-product-container">
+            <div class="home-product-heading">
+                <h2>Our Best-Selling Styles</h2>
+                <p> Find out in real-time what everyone is buying right now.</p>
+            </div>
+            <div class="best-selling-gifts">
+                <div class="best-selling-gifts-content">
+                    <h2>Best Selling Gifts</h2>
+                    <p>Accessories to make an outfit pop. One size fits all.</p>
+                    <a href="">Shop Now</a>
+                </div>
+                <div class="best-selling-gifts-products">
+                    <div class="slider">
+                        <button class="arrow prev" onclick="changeBestGiftSlide(-1)"><i
+                                class="ri-arrow-left-s-line"></i></button>
+                        <div class="best-selling-gifts-slides slides">
+                            <div class="slide gifts-slide">
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/56907050.jpg" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>TOTÊME</h4>
+                                        <span> ₹100772 to ₹100846 </span>
+                                        <p>Embroidered Fringe-trim Scarf Wool Jacket In Black</p>
+                                    </div>
+                                </div>
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/21016883_1.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>GUCCI</h4>
+                                        <span>₹37135 (4% OFF)</span>
+                                        <p>Rhinestone-embellished Logo Hair Clip In Oro</p>
+                                    </div>
+                                </div>
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/639.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>DONNA KARAN</h4>
+                                        <span>₹2426 (15% OFF)</span>
+                                        <p>Cashmere Mist Deodorant Anti-perspirant Stick</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="slide gifts-slide">
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/tomford.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>TOM FORD</h4>
+                                        <span>₹8339 (15% OFF)</span>
+                                        <p>3.4 Oz. Soleil Blanc Shimmering Body Oil In Gold</p>
+                                    </div>
+                                </div>
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/augstin.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>AUGUSTINUS BADER</h4>
+                                        <span>₹7605 to 7670 </span>
+                                        <p>The Scalp Treatment 30ml In As Sam</p>
+                                    </div>
+                                </div>
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/pesrdon.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>MASON PEARSON</h4>
+                                        <span>₹14072</span>
+                                        <p>Pocket Boar Bristle Brush For Fine To Normal Hair In No Colour</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <button class="arrow next" onclick="changeBestGiftSlide(1)"><i
+                                class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="best-selling-gifts">
+                <div class="best-selling-gifts-content">
+                    <h2>FESTIVE PARTY DRESSES</h2>
+                    <p>Now you know where they found it. Find yours.</p>
+                    <a href="">Shop Now</a>
+                </div>
+                <div class="best-selling-gifts-products">
+                    <div class="slider">
+                        <button class="arrow prev" onclick="changeFestivePartySlide(-1)"><i
+                                class="ri-arrow-left-s-line"></i></button>
+                        <div class="festive-party-slides slides">
+                            <div class="slide gifts-slide festive-slide">
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/71209661.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>MISSONI</h4>
+                                        <span>₹107282 (48% OFF)</span>
+                                        <p>Sequin Embellished Chevron Mini Dress In Pink & Purple</p>
+                                    </div>
+                                </div>
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/54284206.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>ALICE AND OLIVIA</h4>
+                                        <span>Not available in India</span>
+                                        <p>Harmony Sequin Asymmetric Hem Cocktail Dress In Rose</p>
+                                    </div>
+                                </div>
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/solace-london-nia-maxi-dress-pink-84872180.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>SOLACE LONDON</h4>
+                                        <span>₹9426 (15% OFF)</span>
+                                        <p>Nia Maxi Dress In Bright Pink</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="slide gifts-slide festive-slide">
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/w960.avif" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>16ARLINGTON</h4>
+                                        <span>Not available in India </span>
+                                        <p>Sior Sequined Minidress In Yellow</p>
+                                    </div>
+                                </div>
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/62272090_1.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>ALEXANDER MCQUEEN</h4>
+                                        <span>₹103738 (50% OFF)</span>
+                                        <p>Cut-out Flared-hem Knitted Midi Dress In Black</p>
+                                    </div>
+                                </div>
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/valentino-ribbed-tiered-mini-dress-black-93487222.webp"
+                                            alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>VALENTINO</h4>
+                                        <span>₹195943 (48% OFF)</span>
+                                        <p>Ribbed-tiered Mini Dress In Black</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <button class="arrow next" onclick="changeFestivePartySlide(1)"><i
+                                class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="best-selling-gifts">
+                <div class="best-selling-gifts-content">
+                    <h2>TOP GIFT SETS</h2>
+                    <p>A box full of their fave beauty products is an easy win.</p>
+                    <a href="">Shop Now</a>
+                </div>
+                <div class="best-selling-gifts-products">
+                    <div class="slider">
+                        <button class="arrow prev" onclick="changeTopGiftSlide(-1)"><i
+                                class="ri-arrow-left-s-line"></i></button>
+                        <div class="top-gift-sets slides">
+                            <div class="slide gifts-slide festive-slide">
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/ordinary.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>THE ORDINARY</h4>
+                                        <span>₹1410 </span>
+                                        <p>THE ORDINARY The Acne Set 1 / 1</p>
+                                    </div>
+                                </div>
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/lauder.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>ESTÉE LAUDER</h4>
+                                        <p><span>₹11148</p>
+                                        <p>Nightly Renewal Set In No Color</p>
+                                    </div>
+                                </div>
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/69368122.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>NUFACE</h4>
+                                        <p><span>₹52682 </span></p>
+                                        <p>Trinity+ Complete Advanced Facing Toning Kit In N,a</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="slide gifts-slide festive-slide">
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/clinique-smooth-renew-skincare-set-118-value-91101496.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>CLINIQUE</h4>
+                                        <span>₹7234</span>
+                                        <p>Smooth + Renew Skincare Set ($118 Value) In No Color</p>
+                                    </div>
+                                </div>
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/charlotte-tilbury-love-frequency-home-and-away-set-na-94860640.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>CHARLOTTE TILBURY</h4>
+                                        <span>₹13268</span>
+                                        <p>Love Frequency Home And Away Set In N,a</p>
+                                    </div>
+                                </div>
+                                <div class="gift-product">
+                                    <div class="gift-product-img">
+                                        <img src="../../Images/10302568_37.webp" alt="">
+                                    </div>
+                                    <div class="gift-product-content">
+                                        <h4>LEONOR GREYL</h4>
+                                        <span>₹5804 to ₹5900</span>
+                                        <p>Luxury Travel Kit For Color Treated Hair In No Colro</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <button class="arrow next" onclick="changeTopGiftSlide(1)"><i
+                                class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="best-selling-gifts">
+            <div class="best-selling-gifts-content">
+                <h2>Best Selling Gifts</h2>
+                <p>Accessories to make an outfit pop. One size fits all.</p>
+                <a href="">Shop Now</a>
+            </div>
+            <div class="best-selling-gifts-products">
+                <div class="slider">
+                    <button class="arrow prev" onclick="changeBestGiftSlide(-1)"><i
+                            class="ri-arrow-left-s-line"></i></button>
+                    <div class="best-selling-gifts-slides slides">
+                        <div class="slide gifts-slide">
+                            <div class="gift-product">
+                                <div class="gift-product-img">
+                                    <img src="../../Images/56907050.jpg" alt="">
+                                </div>
+                                <div class="gift-product-content">
+                                    <h4>TOTÊME</h4>
+                                    <p><span>₹100772 </span> to <span>₹100846 </span></p>
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="gift-product">
+                                <div class="gift-product-img">
+                                    <img src="../../Images/21016883_1.webp" alt="">
+                                </div>
+                                <div class="gift-product-content">
+                                    <h4>GUCCI</h4>
+                                    <p><span>₹37135 (4% OFF)</p>
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="gift-product">
+                                <div class="gift-product-img">
+                                    <img src="../../Images/639.webp" alt="">
+                                </div>
+                                <div class="gift-product-content">
+                                    <h4>DONNA KARAN</h4>
+                                    <p><span>₹2426 (15% OFF)</span></p>
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="slide gifts-slide">
+                            <div class="gift-product">
+                                <div class="gift-product-img">
+                                    <img src="../../Images/56907050.jpg" alt="">
+                                </div>
+                                <div class="gift-product-content">
+                                    <h4>TOTÊME</h4>
+                                    <p><span>₹100772 </span> to <span>₹100846 </span></p>
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="gift-product">
+                                <div class="gift-product-img">
+                                    <img src="../../Images/21016883_1.webp" alt="">
+                                </div>
+                                <div class="gift-product-content">
+                                    <h4>GUCCI</h4>
+                                    <p><span>₹37135 (4% OFF)</p>
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="gift-product">
+                                <div class="gift-product-img">
+                                    <img src="../../Images/639.webp" alt="">
+                                </div>
+                                <div class="gift-product-content">
+                                    <h4>DONNA KARAN</h4>
+                                    <p><span>₹2426 (15% OFF)</span></p>
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <button class="arrow next" onclick="changeBestGiftSlide(1)"><i
+                            class="ri-arrow-right-s-line"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="best-selling-gifts">
+            <div class="best-selling-gifts-content">
+                <h2>Best Selling Gifts</h2>
+                <p>Accessories to make an outfit pop. One size fits all.</p>
+                <a href="">Shop Now</a>
+            </div>
+            <div class="best-selling-gifts-products">
+                <div class="slider">
+                    <button class="arrow prev" onclick="changeBestGiftSlide(-1)"><i
+                            class="ri-arrow-left-s-line"></i></button>
+                    <div class="best-selling-gifts-slides slides">
+                        <div class="slide gifts-slide">
+                            <div class="gift-product">
+                                <div class="gift-product-img">
+                                    <img src="../../Images/56907050.jpg" alt="">
+                                </div>
+                                <div class="gift-product-content">
+                                    <h4>TOTÊME</h4>
+                                    <p><span>₹100772 </span> to <span>₹100846 </span></p>
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="gift-product">
+                                <div class="gift-product-img">
+                                    <img src="../../Images/21016883_1.webp" alt="">
+                                </div>
+                                <div class="gift-product-content">
+                                    <h4>GUCCI</h4>
+                                    <p><span>₹37135 (4% OFF)</p>
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="gift-product">
+                                <div class="gift-product-img">
+                                    <img src="../../Images/639.webp" alt="">
+                                </div>
+                                <div class="gift-product-content">
+                                    <h4>DONNA KARAN</h4>
+                                    <p><span>₹2426 (15% OFF)</span></p>
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="slide gifts-slide">
+                            <div class="gift-product">
+                                <div class="gift-product-img">
+                                    <img src="../../Images/56907050.jpg" alt="">
+                                </div>
+                                <div class="gift-product-content">
+                                    <h4>TOTÊME</h4>
+                                    <p><span>₹100772 </span> to <span>₹100846 </span></p>
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="gift-product">
+                                <div class="gift-product-img">
+                                    <img src="../../Images/21016883_1.webp" alt="">
+                                </div>
+                                <div class="gift-product-content">
+                                    <h4>GUCCI</h4>
+                                    <p><span>₹37135 (4% OFF)</p>
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="gift-product">
+                                <div class="gift-product-img">
+                                    <img src="../../Images/639.webp" alt="">
+                                </div>
+                                <div class="gift-product-content">
+                                    <h4>DONNA KARAN</h4>
+                                    <p><span>₹2426 (15% OFF)</span></p>
+                                    <button>Add to Cart</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <button class="arrow next" onclick="changeBestGiftSlide(1)"><i
+                            class="ri-arrow-right-s-line"></i></button>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <!-- compare -->
+    <section class="stores-container">
+        <div class="store-container-item">
+            <div class="store-heading">
+                <h2>Compare 600+ Stores In <span style="color: rgb(160, 10, 10);">One</span> Place </h2>
+                <p>ModeSens allows you to compare prices and availability across hundreds of stores and thousands of
+                    brands.
+                </p>
+                <a href="">Try it Now</a>
+            </div>
+            <div class="store-image">
+                <div>
+                    <img src="../../Images/202309131compare_img_en.gif" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 2million -->
+    <section class="million-section">
+        <div class="million-heading">
+            <h2>
+                BE PART OF THE 2 MILLION STRONG: OVER $100 MILLION SAVED!
+            </h2>
+        </div>
+        <div class="million-info">
+            <div class="million-cards-container">
+                <div class="million-card">
+                    <div class="million-card-content">
+                        <i class="ri-map-pin-2-line"></i>
+                        <h2> Your Search Ends Here </h2>
+                        <p>Shop 12,000+ brands from our 600+ partners all in one place </p>
+                    </div>
+                </div>
+                <div class="million-card">
+                    <div class="million-card-content">
+                        <i class="ri-hearts-line"></i>
+                        <h2> Shop Confidently</h2>
+                        <p>Always score the best price and shop smarter with</p>
+                    </div>
+                </div>
+                <div class="million-card">
+                    <div class="million-card-content">
+                        <i class="ri-coins-fill"></i>
+                        <h2> Earn Rewards</h2>
+                        <p>Earn up to 3x points for every $1 you spend when shopping with ModeSens.</p>
+                    </div>
+                </div>
+            </div>
+            <button>Read Our Story</button>
+        </div>
+    </section>
+
+    <!-- Akash -->
+    <!-- brand -->
     <!-- MODESENS REWARDS -->
     <!-- WHAT OUR MEMBERS ARE SAYING -->
     <!-- NEW TO SALE -->
@@ -24,4 +723,6 @@
     <!-- colloboratrive section -->
     <!-- footer -->
 </body>
+
 </html>
+<script src="./home.js"></script>
