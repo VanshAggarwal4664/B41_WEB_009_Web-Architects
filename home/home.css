@@ -7,9 +7,670 @@
 
  /* Akash  */
  /* brand  */
+ .brand{
+    background-color:white;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.spotlight-container {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: white;
+}
+
+.spotlight-header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partner-spotlight {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+}
+
+.partner-spotlight {
+    border-bottom: 2px solid #d32f2f; /* Red underline */
+}
+
+.brand-spotlight {
+    color: #333;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 0;
+    cursor: pointer;
+}
+
+.description {
+    margin: 10px 0 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.logo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Wrap to the next line on small screens */
+}
+
+.logo-row img {
+    width: 130px; 
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.logo-row img:hover {
+    transform: scale(1.1);
+}
+
  /* MODESENS REWARDS */
+.reward, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+.reward {
+    line-height: 1.5;
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Main Container  inside the rewards */
+.rewards-container {
+    text-align: center;
+    min-width: 78%;
+    background-color: #fff;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+/* Steps Section */
+.rewards-steps {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+flex-direction: row;
+}
+
+.step {
+    flex: 1 1 40%;
+    padding: 10px;
+}
+
+.step-number {
+    font-size: 1.5rem;
+    color: #d32f2f; 
+    margin-bottom: 5px;
+}
+
+.step-title {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.step p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Reward Details Section */
+.reward-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.reward-item {
+    flex: 1 1 20%;
+    max-width: 150px;
+    text-align: center;
+}
+
+.reward-item i {
+    font-size: 2.5rem;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.reward-item h4 {
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.reward-item p {
+    font-size: 0.8rem;
+    color: #555;
+}
+.reward button{
+    background:#c90505;
+    color:white;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+}
+/* Responsive Adjustments */
+
  /* WHAT OUR MEMBERS ARE SAYING */
+ .rewardsCrousel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top:30px;
+ }
+ .carousel-container {
+    margin-top: 30px;
+    background: whitesmoke;
+    position: relative;
+    max-width: 70%;
+    overflow: hidden;
+}
+
+/* Carousel Wrapper */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Items */
+.carousel-item {
+    flex: 0 0 28%; /* Show 3 items at a time */
+    padding: 17px;
+    background-color:whitesmoke;
+    text-align: center;
+    margin: 10px;
+}
+
+.carousel-item h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.carousel-item p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+.starcont{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stars {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.carousel-item small {
+    color: #888;
+    font-size: 0.8em;
+}
+
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    top:50px;
+    left: 1px;
+}
+
+.carousel-btn.next {
+    right: 1px;
+}
+.joinover2{
+    background:#c90505;
+    color:white;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    margin-top: 20px;
+}
  /* NEW TO SALE */
+ .newtosalecontainer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ .TrendingNowbox{
+    width: 75%;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .Trendingcarousel .Trenditem img{
+    height:200px;
+    width:100%;
+}
+.Trendingcarousel .newitem img{
+    height:200px;
+    width:100%;
+}
+.Trenditem .content a button:hover {
+    background-color:black;
+    color:white;
+  }
+  
+
+  @media (max-width: 768px) {
+      .TrendingNowbox {
+      width: 100%;
+    }
+  }
+
+  .Trendingcarousel{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .Trenditem {
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .Trenditem img{
+    height:200px;
+}
+
+
+  @media (max-width: 768px) {
+      .Trenditem {
+      flex: 0 0 50%;
+    }
+    
+  }
+
+  @media (max-width: 480px) {
+    .Trenditem {
+      flex: 0 0 50;
+    }
+    .newitem{
+        flex:0 0 50%;
+    }
+  }
+
+  .Trenditem img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  .Trenditem .content {
+    margin-top: 5px;
+  }
+  
+
+  .Trenditem .content h3 {
+    font-size: 15px;
+    margin: 2px 0;
+  }
+  
+
+  .Trenditem .content p {
+    font-size: 12px;
+    color: #666;
+  }
+  
+
+  .Trenditem .content a button {
+    background-color:transparent;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    text-decoration: none;
+  }
+
+  .Trenditem .content a button:hover {
+    background-color:black;
+    color:white;
+  }
+  
+
+  /* Navigation Buttons */
+  .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .controls i {
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+
+  .controls i:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+  
+ 
  /* TRENDING NOW */
  /* colloboratrive section */
+ /* Mobile-first styles */
+ 
+/* Mobile-first styles */
+.itemsbox{
+    margin-top: 30px;
+display:flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+.itemscontainer{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:10px;
+    max-width: 75%;
+}
+.itemscontainer button{
+    padding:15px;
+    width:17%;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+.itemscontainer button:hover{
+    cursor:pointer;
+    font-size: 1.1rem;
+}
+  
  /* footer */
+ footer {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+  }
+
+  .footer-column {
+    margin: 10px 10px;
+  }
+
+  .footer-column h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+  }
+
+  .newsletter-signup {
+    margin-top: 20px;
+  }
+
+  .newsletter-signup input[type="email"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+
+  .newsletter-signup div {
+    margin-bottom: 10px;
+  }
+
+  .newsletter-signup button {
+    width:100%;
+    padding: 8px 10px;
+    background-color: transparent;
+    color:black;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .newsletter-signup button:hover{
+    background-color:black;
+    color:white;
+  }
+
+
+  .footer-icons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .footer-icons a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .footer-icons a:hover {
+    color: #555;
+  }
+
+  .footer-bottom{
+    display:flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+   .icon-container{
+    display:flex;
+     gap:20px;
+  }
+  .icon-container div{
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+    background-color:white;
+  }
+  .icon-container div i{
+    font-size: 1.5rem;
+  }
+  
+@media(max-width:900px) {
+    .itemscontainer button{
+        padding:10px;
+        width:30%;
+        font-size: 10px;
+    }
+}
+ @media (max-width: 768px) {
+    .spotlight-header {
+        flex-direction: column;
+    }
+    .logo-row img {
+        width: 80px;
+    }
+    .rewards-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .reward-details {
+        justify-content: center;
+    }
+    .carousel-item {
+        flex: 0 0 50%; /* Show 2 items */
+        padding: 0;
+    }
+    
+     .footer-container {
+        max-width: 100%;
+      }
+      
+}
+
+@media (max-width: 480px) {
+    .reward-item {
+        max-width: 100px;
+    }
+
+    .reward-item i {
+        font-size: 2rem;
+    }
+
+    .reward-item h4 {
+        font-size: 0.9rem;
+    }
+    .carousel-item {
+        flex: 0 0 100%; /* Show 1 item */
+        padding: 0;
+        margin:0;
+    }
+    .carousel-item h3 {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #333;
+    }
+    
+    .carousel-item p {
+        font-size: 0.8em;
+        color: #555;
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+ .rewardsCrousel h1{
+font-size: 1.2rem;
+text-align: center;
+}
+.carousel-btn.prev {
+    left: 1px;
+    font-size: 1rem;
+}
+
+.carousel-btn.next {
+    right: 1px;
+    font-size: 1rem;
+}
+
+  .footer-container {
+    max-width: 100%;
+  }
+  .footer-column h4 {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 8px;
+  }
+  .footer-column ul li {
+    margin-bottom: 2px;
+  }
+  .footer-column img{
+height:50px;
+width:60px;
+  }
+  .newsletter-signup input[type="email"] {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 8px;
+  }
+
+  .newsletter-signup div {
+    margin-bottom: 10px;
+  }
+  .newsletter-signup div input,label{
+    font-size: 10px;
+  }
+
+  .newsletter-signup button {
+    width:100%;
+    padding: 5px 8px;
+    font-size: 8px;
+    cursor: pointer;
+  }
+  .itemscontainer button{
+    padding:10px;
+    width:30%;
+    font-size: 10px;
+}
+.footer-bottom{
+    flex-direction: column;
+}
+.footer-bottom p,span{
+    text-align: center;
+}
+.footer-bottom div{
+    height:.7rem;
+    width:.7rem;
+    margin-left: 5px;
+}
+.footer-bottom div i{
+    font-size: 1rem;
+}
+}
