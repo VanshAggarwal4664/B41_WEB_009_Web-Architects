@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart | Modesens</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <!-- replace with navbar -->
+        <h2><span class="h2">MODESENS</span></h2>
+      </div>
+      <div class="header-links">
+        <a href="#">Sign In</a>
+        <a href="#">Wish List</a>
+        <a href="#">Shopping Bag</a>
+      </div>
+    </header>
+    <div class="cart-container">
+      <h1>Your Shopping Bag</h1>
+      <div class="cart-content">
+        <div class="cart-items">
+          <!-- cart item -->
+          <div class="cart-item">
+            <div class="item-details">
+              <img src="shirt.webp" alt="Burberry Shirt" />
+              <div class="item-info">
+                <h2>Burberry</h2>
+                <h3>
+                  Summerton Check Short Sleeve Cotton Poplin Button-Up Shirt
+                </h3>
+                <p>Size: Medium</p>
+                <!-- <div class="mobile-actions">
+                  <p>₹<span id="unit-price">51999</span></p>
+                  <div class="item-quantity">
+                    <button id="decrease-btn" class="quantity-btn">−</button>
+                    <span id="quantity">1</span>
+                    <button id="increase-btn" class="quantity-btn">+</button>
+                  </div>
+                  <p>₹<span id="total-price">51999</span></p>
+                  <button class="item-remove">Remove</button>
+                </div> -->
+              </div>
+            </div>
+            <div class="item-actions">
+              <p>₹<span id="unit-price">51999</span></p>
+              <div class="item-quantity">
+                <button id="decrease-btn" class="quantity-btn">−</button>
+                <span id="quantity">1</span>
+                <button id="increase-btn" class="quantity-btn">+</button>
+              </div>
+              <p>₹<span id="total-price">51999</span></p>
+              <button class="item-remove">Remove</button>
+            </div>
+          </div>
+          <!-- can add more cart items as needed -->
+        </div>
+        <div class="cart-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-item">
+            <span>Subtotal</span>
+            <span>₹<span id="total-price">51999</span></span>
+          </div>
+          <div class="summary-item">
+            <span>Estimated Shipping</span>
+            <span>FREE</span>
+          </div>
+          <div class="summary-item total">
+            <span>Total</span>
+            <span>₹<span id="total-price">51999</span></span>
+          </div>
+          <button class="checkout-btn">Check Out</button>
+        </div>
+      </div>
+      <div class="shipping-info">
+        <h3>Shipping Information</h3>
+        <p>International orders usually arrive within 5-13 business days.</p>
+        <p>10 days Return Policy.</p>
+      </div>
+    </div>
+    <!-- replace this with home/product page footer -->
+    <footer>
+      <div class="footer-links">
+        <a href="#">Contact Us</a>
+        <a href="#">Returns & Exchanges</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <p>&copy; 2024, Modesens Inc</p>
+    </footer>
+    <script src="cart.js"></script>
+  </body>
+</html>
