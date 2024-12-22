@@ -160,7 +160,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width:375px) and (max-width:768px) {
+@media screen and  (max-width:767px) {
   .desktop-nav {
       display: none;
   }
@@ -178,7 +178,7 @@ body {
 
 /* Cart Container */
 .cart-container {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 20px auto;
   padding: 0 20px;
 }
