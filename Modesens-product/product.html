@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Fashion & Designer Products</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="mobile-navbar">
+        <div class="navbar">
+            <div class="hamburger">
+                <i class="ri-menu-line"></i>
+            </div>
+            <div class="mobile-logo tagA">
+                <a href="../home/home.html"><h5>MODESENS</h5></a>
+            </div>
+            <div class="icons tagA">
+                <a href="../User Page/user.html"><i class="ri-user-line"></i></a> 
+                <a href="../Cart/cart.html"><i class="ri-handbag-line"></i></a> 
+            </div>
+        </div>
+    </nav>
+    <nav class="desktop-nav">
+        <div class="desktop-navbar">
+            <div class="desktop-logo tagA">
+                <a href="../home/home.html"><h2>MODESENS</h2></a>
+                
+            </div>
+            <ul class="menu tagA">
+                <a href="../Modesens-product/product.html"><li>Women</li></a>
+                <a href="../Modesens-product/product.html"><li>Men</li></a>
+                <a href="../Modesens-product/product.html"><li>Beauty</li></a>
+                <a href="../Modesens-product/product.html"><li>Kids</li></a>
+                <a href="../Modesens-product/product.html"><li>Home</li></a>
+                <a href="../Modesens-product/product.html"><li>Designers</li></a>
+                <a href="../Modesens-product/product.html"><li>Community</li></a>
+                <a href="../Modesens-product/product.html"><li><span>Sale</span></li></a>
+            </ul>
+            <div class="desktop-search">
+                <input type="text" placeholder="Search For Prodcuts">
+            </div>
+            <div class="desktop-icons tagA">
+                <i class="ri-heart-line"></i>
+                <i class="ri-notification-3-line"></i>
+                 <a href="../User Page/user.html"><i class="ri-user-line"></i></a> 
+                 <a href="../Cart/cart.html"><i class="ri-handbag-line"></i></a> 
+            </div>
+        </div>
+    </nav>
+    <div class="side-menu hidden">
+        <div class="side-menu-cross">
+            <i class="ri-twitter-x-line"></i>
+        </div>
+        <div class="side-menu-logo tagA">
+            <a href="../home/home.html"><h2>MODESENS</h2></a>
+        </div>
+        <div class="side-menu-icons">
+            <input type="text" placeholder="Search For Prodcuts">
+            <i class="ri-heart-line"></i>
+            <i class="ri-notification-3-line"></i>
+        </div>
+        <ul class="side-menu-links tagA">
+            <a href="../Modesens-product/product.html"><li>Women</li></a>
+            <a href="../Modesens-product/product.html"><li>Men</li></a>
+            <a href="../Modesens-product/product.html"><li>Beauty</li></a>
+            <a href="../Modesens-product/product.html"><li>Kids</li></a>
+            <a href="../Modesens-product/product.html"><li>Home</li></a>
+            <a href="../Modesens-product/product.html"><li>Designers</li></a>
+            <a href="../Modesens-product/product.html"><li>Community</li></a>
+            <a href="../Modesens-product/product.html"><li><span>Sale</span></li></a>
+        </ul>
+
+    </div>
+</header>
+  <!-- Breadcrumb -->
+  <section class="breadcrumb-section">
+    <div class="breadcrumb">
+      <span id="pageName">MODESENS / WOMEN</span>
+    </div>
+  </section>
+
+
+  <!-- Main Title -->
+  <section class="main-title">
+    <div class="main-header" id="page-heading">
+      <h3>Women's Fashion & Designer Products</h3><br>
+      <p>Shop women's fashion from 600+ stores. Get the best deals and compare prices. Discover new arrivals for
+        designer fashion for women.</p><br>
+    </div>
+  </section>
+
+
+  <!-- Filters Section -->
+  <section class="filters-section">
+    <div class="filters">
+      <div class="filter-box">
+        <span>FILTER BY:</span>
+        <select class="filter-btn" id="price-sort">
+          <option value="">Sort By Price</option>
+          <option value="ascending">Sort in Ascending</option>
+          <option value="descending">Sort in descending</option>
+        </select>
+          <select class="filter-btn" id="product-type">
+          </select>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Count and Pagination -->
+  <section class="product-pagination">
+    <div class="products-pgn">
+      <div class="pagination">
+        <div>
+          <button onclick="movePage('prev')"> << </button>
+        </div>
+        <div class="pagination-links">
+        </div>
+        <div>
+          <button onclick="movePage('next')" >>></button>
+        </div>
+       
+      </div>
+      
+    </div>
+  </section>
+  <section class="reset-section">
+    <div class="reset-container">
+      <div class="mobile-sidebar">
+        <div id="product-sidebar-mobile">
+          <i class="ri-menu-fold-2-line"></i>
+        </div>
+        <p>10000 items</p>
+      </div>
+      <div class="view-options">
+        <button class="sort-btn">Best Sellers <i class="fa-solid fa-caret-down"></i></button>
+      </div>
+      
+    </div>
+   
+  </section>
+
+
+  <!-- ////////Product Page -->
+   <section class="product-section">
+    <div class="product-sidebar">
+      <div class="filter-section">
+                <div class="filter-item">
+                  <button class="filter-title">KEYWORD</button>
+                  <div class="filter-content">
+                    <div class="filter-input">
+                      <input type="text" id="search" placeholder="Filter by keyword">
+                      <button class="search-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <button class="filter-title">GENDER</button>
+                  <div class="filter-content">
+                    <div class="filter-input checkbox">
+                     <Span><input type="radio" id="men" name="gender"> Men</Span> 
+                     <Span><input type="radio" id="women" name="gender" > Women</Span> 
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <button class="filter-title">CATEGORY</button>
+                </div>
+                <div class="filter-item">
+                  <button class="filter-title">DESIGNER</button>
+                </div>
+                <div class="filter-item">
+                  <button class="filter-title">COLOR</button>
+                </div>
+                <div class="filter-item">
+                  <button class="filter-title">MATERIAL</button>
+                </div>
+                <div class="filter-item">
+                  <button class="filter-title">CONDITIONS</button>
+                </div>
+                <div class="filter-item">
+                  <button class="filter-title">SALE DISCOUNT</button>
+                </div>
+                <div class="filter-item">
+                  <button class="filter-title">STORE</button>
+                </div>
+              </div>
+    </div>
+     <div class="product-container">
+       <div class="product-grid">
+    
+       </div>
+     </div>
+   </section>
+
+   
+  <!-- /// mobile product sidebar//// -->
+
+  <div class="product-mobile-sidebar hidden-mobile-sidebar">
+    <div class="product-mobile-sidebar-cross">
+      <i class="ri-twitter-x-line"></i>
+   </div>
+    <div class="filter-section">
+              <div class="filter-item">
+                <button class="filter-title">KEYWORD</button>
+                <div class="filter-content">
+                  <div class="filter-input">
+                    <input type="text" id="search" placeholder="Filter by keyword">
+                    <button class="search-icon">
+                      <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-item">
+                <button class="filter-title">GENDER</button>
+                <div class="filter-content">
+                    <div class="filter-input checkbox">
+                     <Span><input type="radio" id="men" name="gender"> Men</Span> 
+                     <Span><input type="radio" id="women" name="gender" > Women</Span> 
+                    </div>
+                  </div>
+              </div>
+              <div class="filter-item">
+                <button class="filter-title">CATEGORY</button>
+              </div>
+              <div class="filter-item">
+                <button class="filter-title">DESIGNER</button>
+              </div>
+              <div class="filter-item">
+                <button class="filter-title">COLOR</button>
+              </div>
+              <div class="filter-item">
+                <button class="filter-title">MATERIAL</button>
+              </div>
+              <div class="filter-item">
+                <button class="filter-title">CONDITIONS</button>
+              </div>
+              <div class="filter-item">
+                <button class="filter-title">SALE DISCOUNT</button>
+              </div>
+              <div class="filter-item">
+                <button class="filter-title">STORE</button>
+              </div>
+            </div>
+  </div>
+
+  <!-- ///////////////// -->
+       <!-- footer -->
+       <footer>
+        <div class="footer-container">
+          <!-- Customer Care Column -->
+          <div class="footer-column">
+            <h4>CUSTOMER CARE</h4>
+            <ul>
+              <li><a href="#">Shopper Protection</a></li>
+              <li><a href="#">Loyalty Program</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Size Guides</a></li>
+              <li><a href="#">Contact Us / Feedback</a></li>
+              <li><a href="#">Shipping / Returns</a></li>
+            </ul>
+          </div>
+      
+          <!-- Information Column -->
+          <div class="footer-column">
+            <h4>INFORMATION</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">ModeSens Ambassador Program</a></li>
+              <li><a href="#">Partner Stores</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">ModeSens Trend Report</a></li>
+            </ul>
+          </div>
+      
+          <!-- Legal Column -->
+          <div class="footer-column">
+            <h4>LEGAL</h4>
+            <ul>
+              <li><a href="#">Terms Of Use</a></li>
+              <li><a href="#">Disclosure</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Community Guidelines</a></li>
+            </ul>
+          </div>
+      
+          <!-- Connect and Newsletter Column -->
+          <div class="footer-column">
+            <h4>CONNECT WITH US</h4>
+            <div class="footer-icons">
+              <i class="ri-apple-fill"></i>
+              <i class="ri-android-fill"></i>
+              <i class="ri-windows-fill"></i>
+              <i class="ri-wechat-fill"></i>
+            </div>
+        <img src="file:///home/akashchouhan/Pictures/Screenshots/Screenshot%20from%202024-12-19%2013-53-42.png" alt="Trust Pilot">
+        </div>
+      <div class="footer-column">
+            <h4>NEWSLETTER SIGN UP</h4>
+            <form class="newsletter-signup">
+              <input type="email" placeholder="Email Address">
+              <div>
+                <input type="checkbox" id="womens">
+                <label for="womens">Women's</label>
+                <input type="checkbox" id="mens" style="margin-left: 10px;">
+                <label for="mens">Men's</label>
+              </div>
+              <button type="submit">SUBMIT</button>
+            </form>
+          </div></div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2024, ModeSens Inc</p>
+          <span class="mode-toggle">LIGHT MODE</span>
+          <div class="icon-container">
+            <div><i class="ri-pinterest-fill"></i></div>
+            <div><i class="ri-twitter-fill"></i></div>
+            <div><i class="ri-instagram-fill"></i></div>
+            <div><i class="ri-facebook-fill"></i></div>
+            <div><i class="ri-weibo-fill"></i></div>
+            <div><i class="ri-youtube-fill"></i></div>
+            <div><i class="ri-qq-fill"></i></div>
+            <div><i class="ri-tiktok-fill"></i></div>
+            <div><i class="ri-linkedin-fill"></i></div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+</html>
+<script src="./product.js"></script>
