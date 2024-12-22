@@ -238,7 +238,7 @@ productGrid.addEventListener("click", (e) => {
   } else if (button && button.textContent === "View Cart") {
     e.preventDefault()
     e.stopPropagation()
-    window.location.href = "/B41_WEB_009_Web-Architects/Cart/cart.html";
+    window.location.href = "https://modesensclone.netlify.app/cart/cart";
   }
 });
 // DOM Elements
