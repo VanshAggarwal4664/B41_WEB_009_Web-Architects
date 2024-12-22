@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Profile - Your Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="user.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">
+        <a href="../home/home.html"><h2>MODESENS</h2></a>
+      </div>
+      <nav class="nav-links">
+        <i class="ri-heart-line"></i>
+        <i class="ri-notification-3-line"></i>
+         <a href="../User Page/user.html"><i class="ri-user-line"></i></a> 
+         <a href="../Cart/cart.html"><i class="ri-handbag-line"></i></a> 
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="user-container">
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <!-- Profile Picture -->
+        <div class="profile-pic">
+          <img src="profile.png" alt="User Profile Picture" />
+        </div>
+
+        <!-- Profile Details -->
+        <div class="profile-details">
+          <h1>John Doe</h1>
+          <p><strong>Email:</strong> johndoe@example.com</p>
+          <p><strong>Member Since:</strong> January 2024</p>
+          <p><strong>Address:</strong> 123 Street, City, Country 12345</p>
+          <p><strong>Phone:</strong> +91-777-123-4567</p>
+
+          <!-- Edit Profile Button -->
+          <button id="edit-profile">Edit Profile</button>
+        </div>
+      </div>
+
+      <!-- Order History Section -->
+      <div class="order-history">
+        <h2>Order History</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Date</th>
+              <th>Total</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#1001</td>
+              <td>March 15, 2024</td>
+              <td>₹48,999.00</td>
+              <td>Delivered</td>
+            </tr>
+            <tr>
+              <td>#1002</td>
+              <td>November 10, 2024</td>
+              <td>₹26,499.00</td>
+              <td>Shipped</td>
+            </tr>
+            <!-- Add more orders as needed -->
+          </tbody>
+        </table>
+      </div>
+      <!-- Wishlist Section -->
+      <div class="wishlist-section">
+        <h2>Wishlist</h2>
+        <div class="wishlist-items">
+          <!-- Wishlist Item 1 -->
+          <div class="wishlist-item">
+            <img src="wishlist1.jpeg" alt="Wishlist Item 1" />
+            <div class="item-details">
+              <h3>Arctic Jacket</h3>
+              <p>₹17,499.00</p>
+              <button>Add to Bag</button>
+            </div>
+          </div>
+          <!-- Wishlist Item 2 -->
+          <div class="wishlist-item">
+            <img src="wishlist2.webp" alt="Wishlist Item 2" />
+            <div class="item-details">
+              <h3>Classic Watch</h3>
+              <p>₹22,999.00</p>
+              <button>Add to Bag</button>
+            </div>
+          </div>
+          <!-- Add more wishlist items as needed -->
+        </div>
+      </div>
+
+      <!-- Save for Later Section -->
+      <div class="save-for-later-section">
+        <h2>Saved for Later</h2>
+        <div class="save-for-later-items">
+          <!-- Save for Later Item 1 -->
+          <div class="save-for-later-item">
+            <img src="sfl1.webp" alt="Save for Later Item 1" />
+            <div class="item-details">
+              <h3>Sweatpants</h3>
+              <p>₹13,299.00</p>
+              <button>Move to Bag</button>
+            </div>
+          </div>
+          <!-- Add more save for later items as needed -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-links">
+        <a href="#">Contact Us</a>
+        <a href="#">Returns & Exchanges</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <p>&copy; 2024, ModeSens Inc</p>
+    </footer>
+  </body>
+</html>
