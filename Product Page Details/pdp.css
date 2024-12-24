@@ -32,10 +32,11 @@ header .h2 {
 }
 
 .nav-links a {
-  margin-left: 20px;
   text-decoration: none;
   color: #333;
-  font-size: 14px;
+}
+.nav-links a i{
+  font-size: 20px;
 }
 .nav-links a:hover {
   text-decoration: underline;
